@@ -278,7 +278,7 @@
             urlhost="/OnLineReader/"
         }
         for(var i=1;i<=pageTotal;i++){
-            imgList[i-1]=window.location.origin + urlhost + encodeURI(getUrl(i));
+            imgList[i-1]=window.location.origin + urlhost + getUrl(i);
         }
         SakiProgress.setText("正在读取参数并建立PDF...")
         imgEle.onload=function(){
